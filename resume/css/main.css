@@ -1,0 +1,134 @@
+body {
+      width: 100%;
+      *cursor: default;
+      overflow: hidden;
+      font: 24px/1.5 "Microsoft YaHei";
+}
+
+
+a{
+	text-decoration: none;
+	font-size: 1.2em;
+	color: #200772;
+	background-color: lightgray;
+	border-radius: 15px;
+}
+
+a:active{
+	color: #ffa500;
+}
+
+.page {
+  display: none;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  padding:5% 0;
+  top: 0;
+  left: 0;
+}
+.contain {
+  width: 80%;
+  height: 100%;
+  display: none;
+  position: relative;
+  z-index: 0;
+  color: #303030;
+  text-align: center;
+  margin:0 auto;
+}
+
+.current .contain,.slide .contain {
+  display: block;
+}
+.current {
+  display: block;
+  z-index: 1;
+}
+.slide {
+  display: block;
+  z-index: 2;
+}
+
+ul{
+	list-style: circle;
+}
+
+#navBar {
+  z-index: 3;
+  position: absolute;
+  top: 10%;
+  right: 3%;
+}
+#navBar .active {
+  list-style: disc;
+}
+#navBar li {
+  cursor: pointer;
+  margin-bottom: 10px;
+  transition: all .5s ease;
+  line-height: 40px;
+  text-align: center;
+  
+}
+
+.page1{
+	background-color:#B1CFE7;
+}
+
+.main img{
+	width: 200px;
+	height: 200px;
+}
+
+.page2{
+	background-color:#B3C8E8 ;
+
+}
+
+.page3{
+	background-color: #B7BCEA ;
+}
+
+.projects .proj{
+	border-width: 40%;
+	border:2px dotted dimgray;
+}
+
+.page4{
+	background-color: #8EB2CE ;
+}
+
+.page5{
+	background-color: #92A8D1 ;
+}
+
+h2{
+	text-shadow: 3px 3px 20px white;
+}
+
+.footer{
+	position: absolute;
+	bottom: 15%;
+	right:0; left:0;
+	color: white;
+	text-shadow: 3px 3px 15px black;
+}
+
+.footer img{
+	width:110px;
+	height: 70px;
+}
+
+.contact a img{
+	width: 80px;
+	height: 80px;
+	vertical-align: middle;
+}
+
+.contact p img{
+	width: 300px;
+	height: 300px;
+	display: block;
+	margin:0 auto;
+}

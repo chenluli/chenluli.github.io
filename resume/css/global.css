@@ -1,0 +1,256 @@
+.start,html,article,aside,body{
+    height: 100%;
+    margin: 0;padding: 0;
+    font-size: 'Lato', Arial, sans-serif;
+}
+
+a, a:hover{
+    color: #fff;
+    text-decoration: none;
+}
+
+.board{
+    height: 100%;
+    margin-left: 8em;
+    margin-right: 1em;
+}
+
+.text_center{
+    width: 75%;
+    margin: auto;
+}
+
+.start > .row{
+    height: 100%;
+    width: 100%;
+    margin: 0;
+}
+
+.start > .spirit{
+    display: table;
+}
+
+.start > .spirit > div{
+    display: table-cell;
+    vertical-align: middle;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.icon{
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, 0.1);
+    height: 2em;
+    width: 2em;
+    margin: 0 auto;
+    text-align: center;
+    line-height: 2em;
+}
+
+.main{
+    background:#246aa6;
+    /*background: url('../img/1.jpg') no-repeat;
+    background-size: cover;*/
+}
+
+.main h1{
+    color: white;
+    font-family: 黑体;
+    font-size: 7em;
+    margin: 10% 0 0 10%;
+}
+
+.arrow{
+    width: 100%;
+    position: absolute;
+    text-align: center;
+    bottom: 0px;
+}
+
+.spirit{
+    background: #246aa6;
+    color: #fff;
+    font-size: 1.2em;
+    text-align: center;
+}
+
+.spiritMain i{
+    font-size: 5em;
+    margin: 10px;
+}
+
+.active .rotate-me {
+    -webkit-animation: spinAround 6s linear 0s 1;
+    -moz-animation: spinAround 6s linear 0s 1;
+    animation: spinAround 6s linear 0s 1;
+}
+
+.title{
+    font-size: 2em;
+    padding-top: 20px; 
+    padding-bottom: 20px;
+}
+
+.spiritMain .footer{
+    font-size: 2em;
+    font-family: 楷体;
+    padding-top: 50px;
+    text-shadow: 0 0 10px rgba(255,255,255,0.9);
+}
+
+@-webkit-keyframes spinAround {
+    from {
+        -webkit-transform: rotate(0deg);
+    }
+    to {
+        -webkit-transform: rotate(360deg);
+    }
+}
+@-moz-keyframes spinAround {
+    from {
+        -moz-transform: rotate(0deg);
+    }
+    to {
+        -moz-transform: rotate(360deg);
+    }
+}
+@keyframes spinAround {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.contribute{
+    background: #63AFD0;
+    font-size: 2em;
+    color: #fff;
+}
+
+.contribute > .row{
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.contribute p{
+    -webkit-transform-origin: 0 center;
+    -moz-transform-origin: 0 center;
+    transform-origin: 0 center;
+
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+.contribute .title {
+    text-shadow: 0 0 10px #fff;
+}
+
+.contribute p:hover{
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    transform: scale(1.2);
+
+    text-shadow: 0 0 10px #fff;
+}
+
+.contribute p.title:hover{
+    -webkit-transform: none;
+    -moz-transform: none;
+    transform: none;
+}
+
+.member{
+    background: #5EC4CD;
+    color: #fff;
+}
+
+.mebmer .background{
+    position: absolute;
+}
+
+.member .middle{
+    display: table-cell;
+    vertical-align: middle;
+    width: 1000px;
+}
+
+.member h1{
+    font-size: 4em;
+    -webkit-transform: rotate(-5deg);
+    -moz-transform: rotate(-5deg);
+    margin-bottom: 50px;
+}
+
+.member .media{
+    width: 500px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: rgba(0,0,0,0);
+    border-radius: 2px;
+    box-shadow: -1px -1px 5px #ccc;
+    -webkit-transition: all 0.1s
+}
+
+.member .media:hover{
+    background: #eee;
+    color: #111;
+}
+
+.member .media img{
+    height: 96px;
+    width: 96px;
+}
+
+.member rt {
+    font-size: 80%;
+}
+
+.contract{
+    text-align: center;
+}
+
+.contract a{
+    color: #333;
+}
+
+.contract a:hover{
+    text-decoration: underline;
+}
+
+.contract > .row{
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.contract .leftImage img{
+    width: 90%;
+    margin: 0 auto;
+}
+
+@media (max-width: 991px) {
+    .contract .leftImage {
+        display: none;
+    }
+
+    .contract .rightText {
+        width: auto;
+        margin: 0 auto;
+        float: none;
+        display: inline-block;
+    }
+}
+
+.contract .rightText{
+    padding-top: 30px;
+    text-align: left;
+    font-size: 2em;
+    font-family: 黑体, Consolas, monaco, monospace;
+}
+
+.contract .rightText .special{
+    font-weight: bolder;
+    color: #3498db;
+}
