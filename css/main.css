@@ -1548,7 +1548,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #868eff;
+  background: #4783c6;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -2185,5 +2185,15 @@ a.search-result {
 }
 #sidebar {
   background-color: #f5f5f5;
-  border: dashed 1px #4d4d4c;
+  border-left: dashed 1px;
+  box-shadow: 0;
+}
+li.sidebar-nav-active {
+  color: #1f1f1f;
+}
+.archive-page-counter {
+  visibility: hidden;
+}
+.site-state-tags:hover {
+  color: #2e7ac4;
 }
