@@ -5,13 +5,13 @@
     
   <url>
     <loc>http://yoursite.com/2016/09/19/blogLaunch/</loc>
-    <lastmod>2017-03-23T04:00:37.844Z</lastmod>
+    <lastmod>2017-03-23T14:34:44.638Z</lastmod>
     <data>
         <display>
         <title>Github+Hexo搭建个人博客及自定义</title>
         <pubTime>2016-09-19T03:29:08.000Z</pubTime>
         
-        <tag>life</tag>
+        <tag>IT-tech,hexo,blog</tag>
          
          
            
@@ -19,6 +19,7 @@
     </data>
     </url>
 
+    
     
     
   <url>
@@ -35,5 +36,4 @@
     </data>
     </url>
 
-    
 </urlset>

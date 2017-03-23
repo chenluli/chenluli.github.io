@@ -413,7 +413,7 @@
           
             <span class="post-updated">
           	&nbsp; | &nbsp; 更新于
-          	<time itemprop="dateUpdated" datetime="2017-03-23T12:00:37+08:00" content="2017-03-23">
+          	<time itemprop="dateUpdated" datetime="2017-03-23T22:34:44+08:00" content="2017-03-23">
           	  2017-03-23
           	</time>
             </span>
@@ -454,7 +454,7 @@
       
         
           
-            <h1 id="Github-Hexo搭建个人博客及自定义"><a href="#Github-Hexo搭建个人博客及自定义" class="headerlink" title="Github+Hexo搭建个人博客及自定义"></a>Github+Hexo搭建个人博客及自定义</h1><h2 id="Hexo-Get-Start"><a href="#Hexo-Get-Start" class="headerlink" title="Hexo Get Start"></a>Hexo Get Start</h2><h3 id="安装和初始化"><a href="#安装和初始化" class="headerlink" title="安装和初始化"></a>安装和初始化</h3><ol>
+            <h2 id="Hexo-Get-Start"><a href="#Hexo-Get-Start" class="headerlink" title="Hexo Get Start"></a>Hexo Get Start</h2><h3 id="安装和初始化"><a href="#安装和初始化" class="headerlink" title="安装和初始化"></a>安装和初始化</h3><ol>
 <li><p>命令行里执行:  </p>
 <figure class="highlight plain"><figcaption><span>npm install -g hexo```</span></figcaption><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"></div><div class="line">2. 初始化博客(若不设置folder，默认在当前文件夹建立网站):  </div><div class="line">   ```$ hexo init [folder]</div></pre></td></tr></table></figure>
 <p>会自动生成source,thems,_config.yml。</p>
@@ -463,8 +463,20 @@
 </li>
 </ol>
 <h3 id="The-First-article"><a href="#The-First-article" class="headerlink" title="The First article"></a>The First article</h3><ol>
-<li><p>我们来创建博客的第一篇文章。  </p>
-<figure class="highlight plain"><figcaption><span>hexo new [post|page|draft] "hello-world"```</span></figcaption><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div></pre></td><td class="code"><pre><div class="line">   该命令会在`[folder]\source\_posts`下自动创建一个&quot;hello-world.md&quot;文件。</div><div class="line"></div><div class="line">2. 发表草稿：`$ hexo publish &lt;filename&gt;` (草稿会存在`source\_drafts`文件夹中，该命令会将草稿移入`source\_posts`中。)</div><div class="line"></div><div class="line">3. 生成静态网页: `$hexo generate`。 生成的静态文件位于public文件夹下。  </div><div class="line"></div><div class="line">4. 启动本地server: `$ hexo server`。 启动后，访问 [http://localhost:4000/](http://localhost:4000/)(4000为默认端口)可预览博客效果。   </div><div class="line">   停止server: &lt;kbd&gt;Ctrl&lt;/kbd&gt;+&lt;kbd&gt;C&lt;/kbd&gt;   (*注 hexo3中server模块独立出来了，要单独安装`$ npm install hexo-server --save`*)</div><div class="line"></div><div class="line">   *注： 若发现站点未发生改变，则可能需 `$ hexo clean` 清除生成的静态文件等，再重新generate* 。</div><div class="line">### 部署到GitHub</div><div class="line">*注:* *需要先在github上创建个人的github page。*</div><div class="line"></div><div class="line">1. 安装hexo-deployer插件: `$ npm install hexo-deployer-git`  </div><div class="line"></div><div class="line">2. 修改站点配置文件`_config.yml`： 找到`deploy`,将其属性修改为：</div><div class="line">   ```type: git</div><div class="line">      repository: https://github.com/[username]/[username].github.io.git</div><div class="line">      branch: master```  </div><div class="line">      *注: [username]为自己在github的用户名。*</div></pre></td></tr></table></figure>
+<li><p>我们来创建博客的第一篇文章:命令<code>$ hexo new [post|page|draft] &quot;hello-world&quot;</code>会在<code>[folder]\source\_posts</code>下自动创建一个”hello-world.md”文件。 </p>
+</li>
+<li><p>发表草稿：<code>$ hexo publish &lt;filename&gt;</code> (草稿会存在<code>source\_drafts</code>文件夹中，该命令会将草稿移入<code>source\_posts</code>中。)</p>
+</li>
+<li><p>生成静态网页: <code>$hexo generate</code>。 生成的静态文件位于public文件夹下。  </p>
+</li>
+<li><p>启动本地server: <code>$ hexo server</code>。 启动后，访问 <a href="http://localhost:4000/" target="_blank" rel="external">http://localhost:4000/</a>(4000为默认端口)可预览博客效果。<br>停止server: <kbd>Ctrl</kbd>+<kbd>C</kbd>   (<em>注 :hexo3中server模块独立出来了，要单独安装<code>$ npm install hexo-server --save</code></em>)</p>
+<p><em>注： 若发现站点未发生改变，则可能需 <code>$ hexo clean</code> 清除生成的静态文件等，再重新generate</em> 。</p>
+<h3 id="部署到GitHub"><a href="#部署到GitHub" class="headerlink" title="部署到GitHub"></a>部署到GitHub</h3><p><em>注:</em> <em>需要先在github上创建个人的github page。</em></p>
+</li>
+<li><p>安装hexo-deployer插件: <code>$ npm install hexo-deployer-git</code>  </p>
+</li>
+<li><p>修改站点配置文件<code>_config.yml</code>： 找到<code>deploy</code>,将其属性修改为：</p>
+<figure class="highlight plain"><figcaption><span>git</span></figcaption><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">repository: https://github.com/[username]/[username].github.io.git</div><div class="line">branch: master```  </div><div class="line">*注: [username]为自己在github的用户名。*</div></pre></td></tr></table></figure>
 </li>
 <li><p>运行 <code>hexo deploy</code>  </p>
 </li>
@@ -475,28 +487,27 @@
 <h3 id="第三方服务集成"><a href="#第三方服务集成" class="headerlink" title="第三方服务集成"></a>第三方服务集成</h3><p>我集成了多说，google-analytics，不蒜子，sitemap。配置第三方库方法可以参考<a href="http://zhiho.github.io/2015/09/29/hexo-next/" target="_blank" rel="external">这篇博客</a>。</p>
 <h2 id="自定义"><a href="#自定义" class="headerlink" title="自定义"></a>自定义</h2><h3 id="目录结构与渲染原理"><a href="#目录结构与渲染原理" class="headerlink" title="目录结构与渲染原理"></a>目录结构与渲染原理</h3><ul>
 <li>站点的<code>scaffolds</code>目录下存着几种layout的模板，默认的layout有page,post,draft,可自定义。</li>
-<li>站点的<code>public</code>下..</li>
-<li>主题的<code>source</code>下..</li>
-<li>主题的<code>layout</code>下..</li>
-<li>主题的<code>scripts</code>下..</li>
+<li>站点的<code>public</code>下是generate后生成的页面，也可自己放上一些需要用的静态资源。</li>
+<li>主题的<code>layout</code>下是以swig文件定义的布局及一些布局相关的逻辑。</li>
+<li>主题的<code>source</code>下放有CSS，JS，font等控制显示和行为的代码。</li>
 </ul>
-<p>在运行hexo g等时，会…</p>
-<p> 基于上述分析，通过修改站点和主题的配置文件是在已有的样式和组件上进行选择。如果我们要自定义且覆盖其默认样式，可以修改css或js源码，但为了不破坏、易于管理、可组合等思想，我们可以在<code>\themes\next\source\js\src</code>中定义自己的js文件，在layout的<code>_layout.swig</code>里引用。在<code>\themes\next\source\css\_custom</code>里定义样式表，支持stylus语法，也可用原生CSS。（从<code>main.styl</code>里可看到NexT主题是默认引用<code>custom.styl</code>的）。</p>
-<p>当想要修改某部分样式时，可以在浏览器中查看元素，然后在自定义文件中修改。</p>
+<p>​      我们通过修改站点和主题的配置文件是在已有的样式和组件上进行选择。如果我们要自定义且覆盖其默认样式，可以修改css或js源码，但为了不破坏、易于管理等，最好不要直接修改源码，我们可以在<code>\themes\next\source\js\src</code>中定义自己的js文件，在layout的<code>_layout.swig</code>里引用。在<code>\themes\next\source\css\_custom</code>里定义样式表(支持stylus语法，也可用原生CSS)。从<code>main.styl</code>里可看到NexT主题是默认引用<code>custom.styl</code>的。</p>
+<p>​     当想要修改某部分样式时，可以在浏览器中查看元素，然后在自定义文件中修改。</p>
 <h3 id="What-I-have-done"><a href="#What-I-have-done" class="headerlink" title="What I have done"></a>What I have done</h3><p>这里我简单记录下该博客在样式上做的改变，也可给大家一个参考</p>
 <ul>
-<li><p>昼/夜两套样式    </p>
-<p>这个单纯因为自己喜欢昼与夜，日与月这样的概念，又爱折腾视觉效果。:-)  </p>
+<li><p>背景  </p>
+<p>设置了昼/夜两套背景样式 。这个单纯因为自己喜欢昼与夜，日与月这样的概念，又爱折腾视觉效果。:-)  </p>
 </li>
-<li><p>侧边栏</p>
-<p>觉得之前的样式不够简约，展开收起的方式也有些奇怪，所以稍微修改了下。</p>
+<li><p>侧边栏   </p>
+<p>觉得之前的样式不够简约，白黑搭配有些违和，于是修改了一下。</p>
 </li>
-<li><p>背景</p>
+<li><p>主页   </p>
+<p>我不太喜欢主页直接展示文章的形式，所以进行了修改。</p>
+<p>（<em>未完待续…</em>）</p>
 </li>
 </ul>
-<h2 id="好啦"><a href="#好啦" class="headerlink" title="好啦"></a>好啦</h2><p>这样，就搞定了自己喜欢的样式，拥有了独一无二的闪耀着自己的小趣味的Blog。接下来就是好好写作的阶段啦，毕竟皮表再华丽也只是皮表，博客灵魂还是内容吧。(发布文章流程：)</p>
-<p><em>未完待续…</em></p>
-<h3 id=""><a href="#" class="headerlink" title=" "></a> </h3>
+<h2 id="好啦"><a href="#好啦" class="headerlink" title="好啦"></a>好啦</h2><p> 这样，就搞定了自己喜欢的样式，拥有了闪耀着自己的小趣味的Blog。接下来就是好好记录，脚踏实地的阶段啦，毕竟皮表再华丽也只是皮表，灵魂还是在于内容呀。</p>
+
           
         
       
@@ -880,6 +891,7 @@ You are the No.<span id="busuanzi_value_site_uv"></span> visitor.Have fun.
   
 
   
+  <script type="text/javascript" src="../source/js/src/myScript.js"></script>
 
 </body>
 </html>
