@@ -5,7 +5,7 @@
     
     <entry>
       <title><![CDATA[关于数据交换]]></title>
-      <url>http://yoursite.com/2017/03/22/2017-3-22-communicate/</url>
+      <url>https://chenluli.github.io/2017/03/22/2017-3-22-communicate/</url>
       <content type="html"></content>
       
         
@@ -13,7 +13,7 @@
     
     <entry>
       <title><![CDATA[Github+Hexo搭建个人博客及自定义]]></title>
-      <url>http://yoursite.com/2016/09/19/blogLaunch/</url>
+      <url>https://chenluli.github.io/2016/09/19/blogLaunch/</url>
       <content type="html"><![CDATA[<h2 id="Hexo-Get-Start"><a href="#Hexo-Get-Start" class="headerlink" title="Hexo Get Start"></a>Hexo Get Start</h2><h3 id="安装和初始化"><a href="#安装和初始化" class="headerlink" title="安装和初始化"></a>安装和初始化</h3><ol>
 <li><p>命令行里执行:  </p>
 <figure class="highlight plain"><figcaption><span>npm install -g hexo```</span></figcaption><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"></div><div class="line">2. 初始化博客(若不设置folder，默认在当前文件夹建立网站):  </div><div class="line">   ```$ hexo init [folder]</div></pre></td></tr></table></figure>
@@ -72,7 +72,11 @@
         
         <tags>
             
-            <tag> IT-tech, hexo, blog </tag>
+            <tag> IT-tech </tag>
+            
+            <tag> hexo </tag>
+            
+            <tag> blog </tag>
             
         </tags>
         

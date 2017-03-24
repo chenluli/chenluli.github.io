@@ -1548,7 +1548,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #b3e324;
+  background: #2483ff;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -2186,17 +2186,16 @@ a.search-result {
 #sidebar {
   background-color: #f5f5f5;
   border-left: dashed 1px;
-  box-shadow: 0;
+  box-shadow: none;
 }
-.sidebar {
-  box-shadow: 0 0 0 0;
-}
-li.sidebar-nav-active {
+.sidebar-nav .sidebar-nav-active {
   color: #1f1f1f;
+  border-bottom-color: #1f1f1f;
+}
+.sidebar-nav .sidebar-nav-active hover {
+  color: #2e7ac4;
+  border-bottom-color: #2e7ac4;
 }
 .archive-page-counter {
   visibility: hidden;
-}
-.site-state-tags:hover {
-  color: #2e7ac4;
 }
