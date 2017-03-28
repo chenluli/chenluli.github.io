@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://chenluli.github.io/"/>
-  <updated>2017-03-22T13:15:41.042Z</updated>
+  <updated>2017-03-25T13:18:46.000Z</updated>
   <id>https://chenluli.github.io/</id>
   
   <author>
@@ -16,16 +16,27 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>关于数据交换</title>
+    <title>页面通信/数据交换的小结</title>
     <link href="https://chenluli.github.io/2017/03/22/2017-3-22-communicate/"/>
     <id>https://chenluli.github.io/2017/03/22/2017-3-22-communicate/</id>
     <published>2017-03-22T13:14:52.000Z</published>
-    <updated>2017-03-22T13:15:41.042Z</updated>
+    <updated>2017-03-25T13:18:46.000Z</updated>
     
     <summary type="html">
     
+      &lt;h3 id=&quot;页面间通信方法&quot;&gt;&lt;a href=&quot;#页面间通信方法&quot; class=&quot;headerlink&quot; title=&quot;页面间通信方法&quot;&gt;&lt;/a&gt;页面间通信方法&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;父页面对于同源的iframe和window.open(URL,name,features
+    
     </summary>
     
+    
+      <category term="ITtech" scheme="https://chenluli.github.io/tags/ITtech/"/>
+    
+      <category term="javascript" scheme="https://chenluli.github.io/tags/javascript/"/>
+    
+      <category term="数据交换" scheme="https://chenluli.github.io/tags/%E6%95%B0%E6%8D%AE%E4%BA%A4%E6%8D%A2/"/>
+    
+      <category term="跨域" scheme="https://chenluli.github.io/tags/%E8%B7%A8%E5%9F%9F/"/>
     
   </entry>
   
@@ -34,7 +45,7 @@
     <link href="https://chenluli.github.io/2016/09/19/blogLaunch/"/>
     <id>https://chenluli.github.io/2016/09/19/blogLaunch/</id>
     <published>2016-09-19T03:29:08.000Z</published>
-    <updated>2017-03-23T15:36:18.113Z</updated>
+    <updated>2017-03-24T13:03:54.143Z</updated>
     
     <summary type="html">
     
