@@ -27,9 +27,10 @@ var postBox=$(".index .post");
 if( isMobile.any() )
 {
   postBox.width(window.screen.height/8);
-  postBox.height(window.screen.height/6);
+  postBox.height(window.screen.height/8);
   postBox.css("padding-top",postBox.height()/5);
   postBox.css("padding-bottom",postBox.height()/5);
+  postBox.css("margin",0);
 
 }
 else{
