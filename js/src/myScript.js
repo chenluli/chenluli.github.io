@@ -3,6 +3,10 @@
  */
 //作用于全局
 
+  //index
+
+
+  //canvas background=======
 var canvas = document.createElement("canvas");
 var mainInner=document.querySelector("#main .main-inner")
 document.querySelector('#main').insertBefore(canvas,mainInner);
@@ -10,7 +14,7 @@ var ctx = canvas.getContext('2d');
 canvas.width =canvas.parentNode.offsetWidth;
 canvas.height =window.screen.height/2;
 canvas.style.position="fixed";
-// canvas.style.top=0;
+canvas.style.bottom=0;
 // canvas.style.zIndex=1;
 
 //如果浏览器支持requestAnimFrame则使用requestAnimFrame否则使用setTimeout
@@ -59,26 +63,51 @@ function loop(){
 loop();
 
 var canvas2=document.createElement("canvas");
-document.querySelector('#header').appendChild(canvas2);
-canvas2.width =canvas.parentNode.offsetWidth/8;
+var sitemata=document.querySelector('#header .header-inner .site-meta');
+document.querySelector('#header .header-inner').insertBefore(canvas2,sitemata);
 canvas2.height=window.screen.height/4;
+canvas2.width=canvas2.height;
 canvas2.style.position="fixed";
 canvas2.style.top=0;
+canvas2.style.right=0;
 var ctx2 = canvas2.getContext('2d');
 
-ctx2.fillStyle = "#fac07d";
+
+ctx2.fillStyle = "#feaa27";
 ctx2.beginPath();
-ctx2.arc(0, 0, 120, 0, 2 * Math.PI, true);
+ctx2.arc(canvas2.height, 0, 160, 0, 2 * Math.PI, true);
 ctx2.closePath();
 ctx2.fill();
-ctx2.fillStyle = "#f2e8cf";
+ctx2.fillStyle = "#ffd549";
 ctx2.beginPath();
-ctx2.arc(0, 0, 100, 0, 2 * Math.PI, true);
+ctx2.arc(canvas2.height, 0, 140, 0, 2 * Math.PI, true);
 ctx2.closePath();
 ctx2.fill();
+ctx2.fillStyle = "#ffe46d";
+ctx2.beginPath();
+ctx2.arc(canvas2.height, 0, 120, 0, 2 * Math.PI, true);
+ctx2.closePath();
+ctx2.fill();
+ctx2.fillStyle = "#ffee92";
+ctx2.beginPath();
+ctx2.arc(canvas2.height, 0, 100, 0, 2 * Math.PI, true);
+ctx2.closePath();
+ctx2.fill();
+ctx2.fillStyle = "#fffbd9";
+ctx2.beginPath();
+ctx2.arc(canvas2.height, 0, 80, 0, 2 * Math.PI, true);
+ctx2.closePath();
+ctx2.fill();
+
 ctx2.fillStyle = "white";
 ctx2.beginPath();
-ctx2.arc(0, 0, 80, 0, 2 * Math.PI, true);
+ctx2.arc(canvas2.height, 0, 50, 0, 2 * Math.PI, true);
 ctx2.closePath();
 ctx2.fill();
 canvas2.style.opacity=0.8;
+
+$(window).resize(function () {
+  canvas.width =canvas.parentNode.offsetWidth;
+  canvas.height =window.screen.height/2;
+  }
+);

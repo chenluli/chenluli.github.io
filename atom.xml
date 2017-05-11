@@ -24,8 +24,7 @@
     
     <summary type="html">
     
-      &lt;h3 id=&quot;页面间通信方法&quot;&gt;&lt;a href=&quot;#页面间通信方法&quot; class=&quot;headerlink&quot; title=&quot;页面间通信方法&quot;&gt;&lt;/a&gt;页面间通信方法&lt;/h3&gt;&lt;ul&gt;
-&lt;li&gt;父页面对于同源的iframe和window.open(URL,name,features
+      &lt;p&gt;页面通信方法的小结，及跨域问题的解决方法。&lt;br&gt;&lt;/p&gt;
     
     </summary>
     
@@ -45,11 +44,11 @@
     <link href="https://chenluli.github.io/2016/09/19/blogLaunch/"/>
     <id>https://chenluli.github.io/2016/09/19/blogLaunch/</id>
     <published>2016-09-19T03:29:08.000Z</published>
-    <updated>2017-05-07T08:38:06.914Z</updated>
+    <updated>2017-05-11T13:57:32.038Z</updated>
     
     <summary type="html">
     
-      &lt;h2 id=&quot;Hexo-Get-Start&quot;&gt;&lt;a href=&quot;#Hexo-Get-Start&quot; class=&quot;headerlink&quot; title=&quot;Hexo Get Start&quot;&gt;&lt;/a&gt;Hexo Get Start&lt;/h2&gt;&lt;h3 id=&quot;安装和初始化&quot;&gt;&lt;a href=&quot;
+      &lt;p&gt;简单地搭建博客的记录，以及一些个性化操作。&lt;br&gt;&lt;/p&gt;
     
     </summary>
     

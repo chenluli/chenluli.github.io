@@ -6,7 +6,8 @@
     <entry>
       <title><![CDATA[页面通信/数据交换的小结]]></title>
       <url>https://chenluli.github.io/2017/03/22/2017-3-22-communicate/</url>
-      <content type="html"><![CDATA[<h3 id="页面间通信方法"><a href="#页面间通信方法" class="headerlink" title="页面间通信方法"></a>页面间通信方法</h3><ul>
+      <content type="html"><![CDATA[<p>页面通信方法的小结，及跨域问题的解决方法。<br><a id="more"></a></p>
+<h3 id="页面间通信方法"><a href="#页面间通信方法" class="headerlink" title="页面间通信方法"></a>页面间通信方法</h3><ul>
 <li>父页面对于同源的iframe和window.open(URL,name,features,replace)打开的窗口能访问其 DOM。</li>
 <li>存储在浏览器中的数据，如Cookie,<a href="https://developer.mozilla.org/zh-CN/docs/Web/Guide/API/DOM/Storage" target="_blank" rel="external">localStorage</a>和<a href="https://developer.mozilla.org/zh-CN/docs/IndexedDB" target="_blank" rel="external">IndexedDB</a>，以源进行分割。每个源都拥有自己单独的存储空间，一个源中的Javascript脚本不能对属于其它源的数据进行读写操作。</li>
 <li>postMessage方法可以跨文档通信/通道通信。</li>
@@ -87,7 +88,8 @@
     <entry>
       <title><![CDATA[Github+Hexo搭建个人博客及自定义]]></title>
       <url>https://chenluli.github.io/2016/09/19/blogLaunch/</url>
-      <content type="html"><![CDATA[<h2 id="Hexo-Get-Start"><a href="#Hexo-Get-Start" class="headerlink" title="Hexo Get Start"></a>Hexo Get Start</h2><h3 id="安装和初始化"><a href="#安装和初始化" class="headerlink" title="安装和初始化"></a>安装和初始化</h3><ol>
+      <content type="html"><![CDATA[<p>简单地搭建博客的记录，以及一些个性化操作。<br><a id="more"></a></p>
+<h2 id="Hexo-Get-Start"><a href="#Hexo-Get-Start" class="headerlink" title="Hexo Get Start"></a>Hexo Get Start</h2><h3 id="安装和初始化"><a href="#安装和初始化" class="headerlink" title="安装和初始化"></a>安装和初始化</h3><ol>
 <li><p>命令行里执行:  <figure class="highlight plain"><figcaption><span>npm install -g hexo```</span></figcaption><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"></div><div class="line">2. 初始化博客(若不设置folder，默认在当前文件夹建立网站):  </div><div class="line">   ```$ hexo init [folder]</div></pre></td></tr></table></figure></p>
 <p>会自动生成source,thems,_config.yml。</p>
 </li>

@@ -87,25 +87,16 @@
 
 
 
-<meta name="description" content="页面间通信方法
-父页面对于同源的iframe和window.open(URL,name,features,replace)打开的窗口能访问其 DOM。
-存储在浏览器中的数据，如Cookie,localStorage和IndexedDB，以源进行分割。每个源都拥有自己单独的存储空间，一个源中的Javascript脚本不能对属于其它源的数据进行读写操作。
-postMessage方法可以跨文档通信/通道">
+<meta name="description" content="页面通信方法的小结，及跨域问题的解决方法。">
 <meta property="og:type" content="article">
 <meta property="og:title" content="页面通信/数据交换的小结">
 <meta property="og:url" content="https://chenluli.github.io/2017/03/22/2017-3-22-communicate/index.html">
 <meta property="og:site_name" content="Chenlu's Space">
-<meta property="og:description" content="页面间通信方法
-父页面对于同源的iframe和window.open(URL,name,features,replace)打开的窗口能访问其 DOM。
-存储在浏览器中的数据，如Cookie,localStorage和IndexedDB，以源进行分割。每个源都拥有自己单独的存储空间，一个源中的Javascript脚本不能对属于其它源的数据进行读写操作。
-postMessage方法可以跨文档通信/通道">
+<meta property="og:description" content="页面通信方法的小结，及跨域问题的解决方法。">
 <meta property="og:updated_time" content="2017-03-25T13:18:46.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="页面通信/数据交换的小结">
-<meta name="twitter:description" content="页面间通信方法
-父页面对于同源的iframe和window.open(URL,name,features,replace)打开的窗口能访问其 DOM。
-存储在浏览器中的数据，如Cookie,localStorage和IndexedDB，以源进行分割。每个源都拥有自己单独的存储空间，一个源中的Javascript脚本不能对属于其它源的数据进行读写操作。
-postMessage方法可以跨文档通信/通道">
+<meta name="twitter:description" content="页面通信方法的小结，及跨域问题的解决方法。">
 
 
 
@@ -353,7 +344,8 @@ postMessage方法可以跨文档通信/通道">
       
 
       
-        <h3 id="页面间通信方法"><a href="#页面间通信方法" class="headerlink" title="页面间通信方法"></a>页面间通信方法</h3><ul>
+        <p>页面通信方法的小结，及跨域问题的解决方法。<br><a id="more"></a></p>
+<h3 id="页面间通信方法"><a href="#页面间通信方法" class="headerlink" title="页面间通信方法"></a>页面间通信方法</h3><ul>
 <li>父页面对于同源的iframe和window.open(URL,name,features,replace)打开的窗口能访问其 DOM。</li>
 <li>存储在浏览器中的数据，如Cookie,<a href="https://developer.mozilla.org/zh-CN/docs/Web/Guide/API/DOM/Storage" target="_blank" rel="external">localStorage</a>和<a href="https://developer.mozilla.org/zh-CN/docs/IndexedDB" target="_blank" rel="external">IndexedDB</a>，以源进行分割。每个源都拥有自己单独的存储空间，一个源中的Javascript脚本不能对属于其它源的数据进行读写操作。</li>
 <li>postMessage方法可以跨文档通信/通道通信。</li>
