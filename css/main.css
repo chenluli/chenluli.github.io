@@ -1548,7 +1548,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #fec6ff;
+  background: #cdc99f;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -2186,4 +2186,52 @@ a.search-result {
 }
 #posts .archive-page-counter {
   visibility: hidden;
+}
+.index .post {
+  float: left;
+  background-color: rgba(255,255,255,0.8);
+  margin: 10px;
+  padding: 0 15px 0 15px;
+  text-align: center;
+  margin-top: -10px;
+}
+.index .post-content,
+.post-meta {
+  visibility: hidden;
+}
+.index .post {
+  border: 1px solid #f6d365;
+  -webkit-transition: all 0.4s ease-in-out;
+  -moz-transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
+  -ms-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+  overflow: hidden;
+}
+.index .post:hover {
+  background-image: linear-gradient(60deg, rgba(246,232,106,0.5) 0%, rgba(253,160,133,0.5) 100%);
+}
+.index .post:hover .post-title {
+  -webkit-transform: translateY(-15%);
+  -moz-transform: translateY(-15%);
+  -o-transform: translateY(-15%);
+  -ms-transform: translateY(-15%);
+  -webkit-transform: translateY(-15%);
+  -moz-transform: translateY(-15%);
+  -ms-transform: translateY(-15%);
+  -o-transform: translateY(-15%);
+  transform: translateY(-15%);
+}
+.index .post:hover .post-content,
+.post-meta {
+  visibility: visible;
+  -webkit-transform: scale(0.9);
+  -moz-transform: scale(0.9);
+  -o-transform: scale(0.9);
+  -ms-transform: scale(0.9);
+  -webkit-transform: scale(0.9);
+  -moz-transform: scale(0.9);
+  -ms-transform: scale(0.9);
+  -o-transform: scale(0.9);
+  transform: scale(0.9);
 }

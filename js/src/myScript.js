@@ -3,12 +3,45 @@
  */
 //作用于全局
 
-  //index
+var isMobile = {
+  Android: function() {
+    return navigator.userAgent.match(/Android/i) ? true : false;
+  },
+  BlackBerry: function() {
+    return navigator.userAgent.match(/BlackBerry/i) ? true : false;
+  },
+  iOS: function() {
+    return navigator.userAgent.match(/iPhone|iPad|iPod/i) ? true : false;
+  },
+  Windows: function() {
+    return navigator.userAgent.match(/IEMobile/i) ? true : false;
+  },
+  any: function() {
+    return (isMobile.Android() || isMobile.BlackBerry() || isMobile.iOS() || isMobile.Windows());
+  }
+};
+
+
+//index
+var postBox=$(".index .post");
+if( isMobile.any() )
+{
+  postBox.width(window.screen.height/8);
+  postBox.height(window.screen.height/6);
+  postBox.css("padding-top",postBox.height()/5);
+  postBox.css("padding-bottom",postBox.height()/5);
+
+}
+else{
+  postBox.width(window.screen.height/6);
+  postBox.height(window.screen.height/6);
+  postBox.css("padding-top",postBox.height()/5);
+}
 
 
   //canvas background=======
 var canvas = document.createElement("canvas");
-var mainInner=document.querySelector("#main .main-inner")
+var mainInner=document.querySelector("#main .main-inner");
 document.querySelector('#main').insertBefore(canvas,mainInner);
 var ctx = canvas.getContext('2d');
 canvas.width =canvas.parentNode.offsetWidth;
@@ -109,5 +142,9 @@ canvas2.style.opacity=0.8;
 $(window).resize(function () {
   canvas.width =canvas.parentNode.offsetWidth;
   canvas.height =window.screen.height/2;
+
+  postBox.width(window.screen.height/6);
+  postBox.height(window.screen.height/6);
+  postBox.css("padding-top",postBox.height()/5);
   }
 );
